@@ -1,0 +1,19 @@
+1. The useSate Hook allows us to create, update and manipulate state inside functional components.
+
+2. What is state?
+-- States are the variables that hold data that our components depend on and may change over time.
+-- Whenever these variables change, React updates the UI by re-rendering the component in the DOM with the current values
+   of the state variables.
+
+3. useState hook takes a single argument: an initial value for the state. Then it returns an array of two values:
+-- state variable
+-- and a funtion to update state
+
+Example:
+             const [count, setCount] = useState(0);
+
+-- Here, initial value for our state is set to 0, as 0 is passed as argument in useState.
+-- The array returned by useState is destructed, so our state value is the variable: count, and out state updater
+   function is setCount function.
+
+4. The state updater funtion is used while handling events, to update state's vaue and to make our page dynamic because once state value is updated, out UI automatically get re-rendered
